@@ -1,7 +1,7 @@
-public class Car {
-    String name = "Wagnor";
-    String company = "Maruti";
-    double price = 800000;
+public class Car extends Vehicle {
+    private String name = "Wagnor";
+    private String company = "Maruti";
+    private double price = 800000;
 
     void drive(){
         System.out.println("You are driving the car!");
@@ -9,4 +9,19 @@ public class Car {
     void brake(){
         System.out.println("You just stopped the car!");
     }
+
+    public void go(){
+        System.out.println("Car is moving....");
+    }
+
+    public String getName(){
+        return this.name;
+    }
+    public String getCompany(){
+        return this.company;
+    }
+    public double getPrice(){
+        return this.price;
+    }
+    
 }

@@ -1,4 +1,4 @@
-public class Human {
+public class Human extends Animal {
     String name;
     int age;
     double weight;
@@ -16,6 +16,12 @@ public class Human {
 
     void run(){
         System.out.printf("%s is running!\n",this.name);
+    }
+
+    @Override
+    public void speak(){
+        super.speak();
+        System.out.printf("Hello, I am %s.\n",this.name);
     }
 
 }

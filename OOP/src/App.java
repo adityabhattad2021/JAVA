@@ -39,19 +39,40 @@ public class App {
 
         // Both will have the same output.
 
-        Food[] refrigerator = new Food[3];
+        // Food[] refrigerator = new Food[3];
 
-        Food f1 = new Food("Apple");
-        Food f2 = new Food("Samosa");
-        Food f3 = new Food("Beriyani");
+        // Food f1 = new Food("Apple");
+        // Food f2 = new Food("Samosa");
+        // Food f3 = new Food("Beriyani");
 
-        refrigerator[0]=f1;
-        refrigerator[1]=f2;
-        refrigerator[2]=f3;
+        // refrigerator[0]=f1;
+        // refrigerator[1]=f2;
+        // refrigerator[2]=f3;
 
-        for(Food food:refrigerator){
-            System.out.println(food);
-        }
+        // for(Food food:refrigerator){
+        //     System.out.println(food);
+        // }
+
+        // Garage garage = new Garage();
+        // Car car = new Car();
+        // car.go();
+
+        // // garage.park(car);
+
+        // Friend[] friends = new Friend[3];
+        // friends[0] = new Friend("Rahul");
+        // friends[1] = new Friend("Suresh");
+        // friends[2] = new Friend("Akash");
+        
+        // for(int x = 0; x < friends.length; x++){
+        //     System.out.println(friends[x]);
+        // }
+
+        // Friend.allFriend();
+
+        Human h1 = new Human("Vivek", 21, 60);
+
+        h1.speak();
 
     }
 }
