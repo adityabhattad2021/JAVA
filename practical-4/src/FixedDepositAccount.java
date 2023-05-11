@@ -15,8 +15,8 @@ public class FixedDepositAccount extends BankAccount {
     }
 
     public void setAccountNumber(){
-        this.accountNumber = super.accountNumeberSerialForFD;
-        super.accountNumeberSerialForFD++;
+        this.accountNumber = super.accountNumberSerialForFD;
+        super.accountNumberSerialForFD++;
     }
 
     @Override
