@@ -8,8 +8,8 @@ public class SavingAccount extends BankAccount implements Debitable {
 
 
     public void setAccountNumber(){
-        this.accountNumber = super.accountNumberSerialForSavingAccount;
-        super.accountNumberSerialForSavingAccount++;
+        this.accountNumber = accountNumberSerialForSavingAccount;
+        accountNumberSerialForSavingAccount++;
     }
 
     public void updateInterest(){
