@@ -51,7 +51,7 @@ public class Teacher extends Person {
 
         double age = LocalDate.now().getYear()
                 - LocalDate.parse(this.dateOfBirth, DateTimeFormatter.ofPattern("dd/MM/yyyy")).getYear();
-        return "Name: " + this.name + "\nAge: " + age + "\nSalary: " + this.salary + "\nQualification: "
+        return "Name: " + this.name + "\nAge: " + age + "\nSalary: " + this.getSalary() + "\nQualification: "
                 + this.qualification + "\nExperience: " + this.experience;
     }
 
