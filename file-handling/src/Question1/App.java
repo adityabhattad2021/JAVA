@@ -17,7 +17,7 @@ public class App {
         // }
         try{
             FilePrinter fp = new FilePrinter();
-            fp.getAllTheFilesInSpecifiedDirectory("./file-handling/src/", 0);
+            fp.getAllTheFilesInSpecifiedDirectory("./practice-questions", 0);
         }catch(Exception exception){
             System.out.println("There was an expected error: "+exception.getMessage());
         }
