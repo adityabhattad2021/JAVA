@@ -23,18 +23,33 @@ public class Office {
     }
 
 
-    public void displayAllManagers(Employee e){
-        Employee tempE;
-        if(e.getReportingManager()==null){
-            System.out.println(e.getName()+" is the team HR Manager of the company!");
-            return;
+    // public void displayAllManagers(Employee e){
+    //     Employee tempE;
+    //     if(e.getReportingManager()==null){
+    //         System.out.println(e.getName()+" is the team HR Manager of the company!");
+    //         return;
+    //     }
+    //     tempE=e;
+    //     System.out.println("Reporting manager of "+tempE.getName()+" are:");
+    //     do{
+    //         System.out.println(tempE.getReportingManager().getName());
+    //         tempE=tempE.getReportingManager();
+    //     }while(tempE.getReportingManager()!=null);
+    // }
+    public void displayAllManagers(Employee e) {
+        if (e.getReportingManager() == null) {
+            System.out.println(e.getName() + " is the team HR Manager of the company!");
+        } else {
+            System.out.println("Reporting manager of " + e.getName() + " are:");
+            displayReportingManagers(e.getReportingManager());
         }
-        tempE=e;
-        System.out.println("Reporting manager of "+tempE.getName()+" are:");
-        do{
-            System.out.println(tempE.getReportingManager().getName());
-            tempE=tempE.getReportingManager();
-        }while(tempE.getReportingManager()!=null);
+    }
+
+    private void displayReportingManagers(Employee e) {
+        if (e.getReportingManager() != null) {
+            displayReportingManagers(e.getReportingManager());
+        }
+        System.out.println(e.getName());
     }
 
     public void displayAll(String employeeAtPosition){
