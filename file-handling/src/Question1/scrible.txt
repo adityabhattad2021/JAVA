@@ -1,0 +1,7 @@
+Give directory name
+Convert it to file object
+Check if it is a directory
+if it is a directory
+print its name
+check its childrens
+go to step 4.
