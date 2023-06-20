@@ -12,7 +12,7 @@ public class Product implements Serializable {
     Product(String name,Integer quantity,Double price){
         setId();
         this.name = name;
-        this.quantity = quantity;
+        setQuantity(quantity);;
         this.price = price;
     }
 
@@ -50,8 +50,12 @@ public class Product implements Serializable {
         return product_count;
     }
 
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
+
     public String toString(){
-        return String.format("\nProduct Id: %s\nProduct Name: %s\nProduct Quantity: %d\nProduct Price: %.2f\n",getId(),getName(),getProduct_count(),getPrice());
+        return String.format("\nProduct Id: %s\nProduct Name: %s\nProduct Quantity: %d\nProduct Price: %.2f\n",getId(),getName(),getQuantity(),getPrice());
     }
 
 }
