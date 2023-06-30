@@ -11,7 +11,7 @@ public class MyArry<T> {
     }
 
     public void add(T element) {
-        if (this.arry.length <= size) {
+        if (noofElement < size) {
             this.arry[noofElement] = element;
             noofElement++;
         } else {
@@ -23,7 +23,11 @@ public class MyArry<T> {
     private void grow() {
         int newSize = (int) (this.size * 1.5);
         T[] newArry = (T[]) new Object[newSize];
-        System.arraycopy(this.arry, 0, newArry, 0, this.size);
+        for(int x=0;x<this.arry.length;x++){
+            newArry[x]=this.arry[x];
+        }
+        this.arry=newArry; 
+        this.size=newArry.length;       
     }
 
     public void swap(int index1, int index2) {
@@ -41,6 +45,10 @@ public class MyArry<T> {
 
     public int getSize() {
         return size;
+    }
+
+    public int getNoofElement() {
+        return noofElement;
     }
 
     public T get(int index) {
