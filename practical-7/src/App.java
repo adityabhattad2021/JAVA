@@ -43,10 +43,16 @@ public class App {
         myArray.add(30);
         myArray.add(40);
         myArray.add(50);
+        myArray.add(60);
+        myArray.add(70);
+        myArray.add(70);
+        myArray.add(70);
+        myArray.add(70);
+        myArray.add(70);
 
         // Printing the initial array
         System.out.println("Initial array:");
-        for (int i = 0; i < myArray.getSize(); i++) {
+        for (int i = 0; i < myArray.getNoofElement(); i++) {
             System.out.print(myArray.get(i)+ " ");
         }
         System.out.println();
@@ -56,7 +62,7 @@ public class App {
 
         // Printing the array after swapping
         System.out.println("Array after swapping:");
-       for (int i = 0; i < myArray.getSize(); i++) {
+       for (int i = 0; i < myArray.getNoofElement(); i++) {
             System.out.print(myArray.get(i) + " ");
         }
         System.out.println();
