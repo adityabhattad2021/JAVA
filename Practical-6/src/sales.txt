@@ -1,12 +1,5 @@
 Customer Id: C001
 Customer Id: Aditya
 Products bought by the customer are:
-p1 : 2
-p2 : 3
-
-Customer Id: C002
-Customer Id: Rahul
-Products bought by the customer are:
-p1 : 3
-p2 : 5
+product1 : 5
 

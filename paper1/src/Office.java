@@ -1,7 +1,7 @@
 public class Office {
     private Employee[] arrayOfEmployees;
 
-    Office(){
+    public Office(){
         arrayOfEmployees = new Employee[13];
         arrayOfEmployees[0]=new Employee("Employee 1","Apple","Gaming","HR Manager",null);        
         arrayOfEmployees[1]=new Employee("Employee 2","Apple","Gaming","Project Manager",arrayOfEmployees[0]);        
@@ -23,19 +23,19 @@ public class Office {
     }
 
 
-    // public void displayAllManagers(Employee e){
-    //     Employee tempE;
-    //     if(e.getReportingManager()==null){
-    //         System.out.println(e.getName()+" is the team HR Manager of the company!");
-    //         return;
-    //     }
-    //     tempE=e;
-    //     System.out.println("Reporting manager of "+tempE.getName()+" are:");
-    //     do{
-    //         System.out.println(tempE.getReportingManager().getName());
-    //         tempE=tempE.getReportingManager();
-    //     }while(tempE.getReportingManager()!=null);
-    // }
+    public void displayAllManagers(Employee e){
+        Employee tempE;
+        if(e.getReportingManager()==null){
+            System.out.println(e.getName()+" is the team HR Manager of the company!");
+            return;
+        }
+        tempE=e;
+        System.out.println("Reporting manager of "+tempE.getName()+" are:");
+        do{
+            System.out.println(tempE.getReportingManager().getName());
+            tempE=tempE.getReportingManager();
+        }while(tempE.getReportingManager()!=null);
+    }
     public void displayAllManagers(Employee e) {
         if (e.getReportingManager() == null) {
             System.out.println(e.getName() + " is the team HR Manager of the company!");

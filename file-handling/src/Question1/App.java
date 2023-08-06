@@ -1,5 +1,7 @@
 package Question1;
 
+import Question1.FilePrinter.FilePrinter;
+
 public class App {
     public static void main(String[] args) {
         // Get current directory

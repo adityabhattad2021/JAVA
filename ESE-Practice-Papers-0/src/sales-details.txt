@@ -1,0 +1,5 @@
+T-shirt 500 20
+Mug 100 40
+Juggling_Dolls 200 10
+Pin 10 200
+Key_Chain 50 500

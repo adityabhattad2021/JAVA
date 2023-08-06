@@ -28,8 +28,8 @@ public class App {
         // System.out.println("File to URI: " + file.toURI());
         // System.out.println("File to String: " + file.toString());
         // System.out.println("File to Path: " + file.toPath());
-        // Write in the file
-        FileWriter writer = new FileWriter(file);
+        // Write in the file,
+        FileWriter writer = new FileWriter(file,true);
         writer.write("1This is a test file.");
         writer.write("2This is a again a test file.");
         writer.close();
